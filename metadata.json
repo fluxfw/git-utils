@@ -1,0 +1,7 @@
+{
+    "description": "Some util scripts for git",
+    "topics": [
+        "git"
+    ],
+    "homepage": "https://github.com/fluxapps/flux-git-utils"
+}
