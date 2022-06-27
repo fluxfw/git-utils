@@ -10,8 +10,14 @@ Some util scripts for git
 
 ## Commands
 
-### install-project-to-home-local-bin
+### git-clean-branches
 
 ```shell
 git-clean-branches
+```
+
+### update-new-release
+
+```shell
+update-new-release
 ```
