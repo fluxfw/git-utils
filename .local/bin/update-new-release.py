@@ -65,7 +65,7 @@ if latest_end_position != -1:
 
 new_version_changelog = old_latest_changelog.replace("latest", f"v{new_version}")
 
-new_latest_changelog = sub(r"Changes\s*:\s*(.+\n)+\n*", "Changes:\n\n\-\n\n", old_latest_changelog)
+new_latest_changelog = sub(r"Changes\s*:\s*(.+\n)+\n*", "Changes:\n\n\-\n", old_latest_changelog)
 
 changelog = changelog.replace(old_latest_changelog, f"""{new_latest_changelog}
 {new_version_changelog}""")
