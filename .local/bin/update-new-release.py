@@ -7,7 +7,20 @@ from re import sub
 
 folder = getcwd()
 
-metadata_json_file = join(folder, "metadata.json")
+_metadata_json_file = join(folder, "metadata.json")
+_composer_json_file = join(folder, "composer.json")
+_package_json_file = join(folder, "package.json")
+if exists(_metadata_json_file):
+    metadata_json_file = _metadata_json_file
+else:
+    if exists(_composer_json_file):
+        metadata_json_file = _composer_json_file
+    else:
+        if exists(_package_json_file):
+            metadata_json_file = _package_json_file
+        else:
+            metadata_json_file = _metadata_json_file
+
 changelog_md_file = join(folder, "CHANGELOG.md")
 plugin_php_file = join(folder, "plugin.php")
 
