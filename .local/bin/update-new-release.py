@@ -22,7 +22,10 @@ else:
             metadata_json_file = _metadata_json_file
 
 changelog_md_file = join(folder, "CHANGELOG.md")
+
 plugin_php_file = join(folder, "plugin.php")
+
+package_lock_json_file = join(folder, "package-lock.json")
 
 metadata = None
 if exists(metadata_json_file):
@@ -97,3 +100,14 @@ if exists(plugin_php_file):
 
     with open(plugin_php_file, "w") as fp:
         fp.write(plugin)
+
+if exists(package_lock_json_file):
+    package_lock = None
+    with open(package_lock_json_file, "r") as fp:
+        package_lock = load(fp)
+
+    package_lock["version"] = new_version
+    package_lock["packages"][""]["version"] = new_version
+
+    with open(package_lock_json_file, "w") as fp:
+        fp.write(f"{dumps(package_lock, indent=4)}\n")
