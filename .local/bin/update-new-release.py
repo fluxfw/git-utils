@@ -106,8 +106,9 @@ if exists(package_lock_json_file):
     with open(package_lock_json_file, "r") as fp:
         package_lock = load(fp)
 
-    package_lock["version"] = new_version
-    package_lock["packages"][""]["version"] = new_version
+    if "version" in package_lock:
+        package_lock["version"] = new_version
+        package_lock["packages"][""]["version"] = new_version
 
-    with open(package_lock_json_file, "w") as fp:
-        fp.write(f"{dumps(package_lock, indent=4)}\n")
+        with open(package_lock_json_file, "w") as fp:
+            fp.write(f"{dumps(package_lock, indent=4)}\n")
