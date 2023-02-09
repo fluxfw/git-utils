@@ -15,9 +15,3 @@ Some util scripts for git
 ```shell
 git-clean-branches
 ```
-
-### update-new-release
-
-```shell
-update-new-release
-```
