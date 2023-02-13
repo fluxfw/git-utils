@@ -15,3 +15,9 @@ Some util scripts for git
 ```shell
 git-clean-branches
 ```
+
+### git-clean-ignored
+
+```shell
+git-clean-ignored /path/to/folder
+```
