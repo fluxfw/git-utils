@@ -21,3 +21,9 @@ git-clean-branches
 ```shell
 git-clean-ignored /path/to/folder
 ```
+
+### git-diff
+
+```shell
+git-diff /path/to/folder
+```
