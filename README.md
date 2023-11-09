@@ -4,16 +4,14 @@ Some util scripts for git
 
 ## Installation
 
-```shell
-./bin/install-to-home-local-bin.sh
-```
+Add the files in [bin/PATH/host](bin/PATH/host) to your PATH
 
 ## Commands
 
 ### git-clean-branches
 
 ```shell
-git-clean-branches
+git-clean-branches /path/to/folder
 ```
 
 ### git-clean-ignored
@@ -26,4 +24,10 @@ git-clean-ignored /path/to/folder
 
 ```shell
 git-diff /path/to/folder
+```
+
+### git-show
+
+```shell
+git-show /path/to/folder
 ```
