@@ -19,15 +19,3 @@ git-clean-branches /path/to/folder
 ```shell
 git-clean-ignored /path/to/folder
 ```
-
-### git-diff
-
-```shell
-git-diff /path/to/folder
-```
-
-### git-show
-
-```shell
-git-show /path/to/folder
-```
