@@ -1,6 +1,4 @@
-# flux-git-utils
-
-Some util scripts for git
+# git-utils
 
 ## Installation
 
