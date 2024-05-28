@@ -2,18 +2,18 @@
 
 ## Installation
 
-Add the files in [bin/HOST_PATH](bin/HOST_PATH) to your PATH
+Add the files in [HOST_PATH](HOST_PATH) to your PATH
 
 ## Commands
 
-### git-clean-branches
+### git-utils-clean-branches
 
 ```shell
-git-clean-branches /path/to/folder
+git-utils-clean-branches /path/to/folder
 ```
 
-### git-clean-ignored
+### git-utils-clean-ignored
 
 ```shell
-git-clean-ignored /path/to/folder
+git-utils-clean-ignored /path/to/folder
 ```

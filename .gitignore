@@ -1,5 +1,7 @@
 *
-!bin
-!bin/**
+!HOST_PATH
+!HOST_PATH/**
 !.gitignore
+!clean-branches.sh
+!clean-ignored.sh
 !README.md
